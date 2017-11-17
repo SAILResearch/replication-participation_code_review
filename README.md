@@ -3,7 +3,7 @@
 Patanamon Thongtanunam, Shane McIntosh, Ahmed E. Hassan, and Hajimu Iida  
 [Empirical Software Engineering Journal, vol. 22, issue 2, 2017](https://doi.org/10.1007/s10664-016-9452-6)
 
-## Bibtex
+## 1) Bibtex
 
 ```bibtex
 @article{Thongtanunam2017,
@@ -27,7 +27,7 @@ Patanamon Thongtanunam, Shane McIntosh, Ahmed E. Hassan, and Hajimu Iida
 } 
 ```
 
-## Download Processed Datasets
+## 2) Download Processed Datasets
 
 Each dataset contains the 20 patch and MCR metrics for the studied patches. Each row also includes review ID, number of reviewers, discussion length, date of last update before feedback, and date of the first feedback of a patch.
 
@@ -35,38 +35,38 @@ Each dataset contains the 20 patch and MCR metrics for the studied patches. Each
 - Qt dataset (csv file, ~23 MB)
 - OpenStack dataset (csv file, ~33 MB)
 
-You can download the datasets [here]()
+You can download these datasets [here](https://github.com/SAILResearch/replication-participation_code_review/releases/latest)
 
-## Additional Results
+## 3) Additional Results
 
-### RQ1 Results
+### 3.1) RQ1 Results
 
-Analysis                                   | Android                     | QT                          | OpenStack
--------------------------------------------|-----------------------------|-----------------------------|--------------------
-Model Construction                         | Variable Clustering         | Variable Clustering         | Variable Clustering  
-"                                          | Spearman multiple rho^2     | Spearman multiple rho^2     | Spearman multiple rho^2
-Nonlinear relationship with the likelihood | #Reviewers of prior patches | #Reviewers of prior patches | #Reviewers of prior patches
-"                                          | -                           | Description length          | -
+Analysis                                   | Android                                                                                         | QT                                                                                         | OpenStack
+-------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------
+Model Construction                         | [Variable Clustering](figures/varclus/varclus_NumberOfReviewers_AndroidReviews.pdf)             | [Variable Clustering](figures/varclus/varclus_NumberOfReviewers_QtReviews.pdf)             | [Variable Clustering](figures/varclus/varclus_NumberOfReviewers_OpenStackReviews.pdf)  
+"                                          | [Spearman multiple rho^2](figures/spearman/estimateDF_NumberOfReviewers_AndroidReviews.pdf)     | [Spearman multiple rho^2](figures/spearman/estimateDF_NumberOfReviewers_QtReviews.pdf)     | [Spearman multiple rho^2](figures/spearman/estimateDF_NumberOfReviewers_OpenStackReviews.pdf)
+Nonlinear relationship with the likelihood | [#Reviewers of prior patches](figures/rq1/results_NumberOfReviewers_Android_PriorReviewers.pdf) | [#Reviewers of prior patches](figures/rq1/results_NumberOfReviewers_Qt_PriorReviewers.pdf) | [#Reviewers of prior patches](figures/rq1/results_NumberOfReviewers_OpenStack_PriorReviewers.pdf)
+"                                          | -                                                                                               | [Description length](figures/rq1/results_NumberOfReviewers_Qt_DescriptionLength.pdf)       | - 
 
-### RQ2 Results
+### 3.2) RQ2 Results
 
-Analysis                                   | Android                            | QT                                 | OpenStack
--------------------------------------------|------------------------------------|------------------------------------|--------------------
-Model Construction                         | Variable Clustering                | Variable Clustering                | Variable Clustering  
-"                                          | Spearman multiple rho^2            | Spearman multiple rho^2            | Spearman multiple rho^2
-Nonlinear relationship with the likelihood | Discussion length of prior patches | Discussion length of prior patches | Discussion length of prior patches
-"                                          | Churn                              | Churn                              | -
+Analysis                                   | Android                                                                                                      | QT                                                                                                      | OpenStack
+-------------------------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------
+Model Construction                         | [Variable Clustering](figures/varclus/varclus_DiscussionLength_AndroidReviews.pdf)                           | [Variable Clustering](figures/varclus/varclus_DiscussionLength_QtReviews.pdf)                           | [Variable Clustering](figures/varclus/varclus_DiscussionLength_OpenStackReviews.pdf)  
+"                                          | [Spearman multiple rho^2](figures/spearman/estimateDF_DiscussionLength_AndroidReviews.pdf)                   | [Spearman multiple rho^2](figures/spearman/estimateDF_DiscussionLength_QtReviews.pdf)                   | [Spearman multiple rho^2](figures/spearman/estimateDF_DiscussionLength_OpenStackReviews.pdf)
+Nonlinear relationship with the likelihood | [Discussion length of prior patches](figures/rq2/results_DiscussionLength_Android_PriorDiscussionLength.pdf) | [Discussion length of prior patches](figures/rq2/results_DiscussionLength_Qt_PriorDiscussionLength.pdf) | [Discussion length of prior patches](figures/rq2/results_DiscussionLength_OpenStack_PriorDiscussionLength.pdf)
+"                                          | [Churn](figures/rq2/results_DiscussionLength_Android_Churn.pdf)                                              | [Churn](figures/rq2/results_DiscussionLength_Qt_Churn.pdf)                                              | - 
 
-### RQ3 Results
+### 3.3) RQ3 Results
 
-Analysis                                   | Android                         | QT                              | OpenStack
--------------------------------------------|---------------------------------|---------------------------------|--------------------
-Model Construction                         | Variable Clustering             | Variable Clustering             | Variable Clustering  
-"                                          | Spearman multiple rho^2         | Spearman multiple rho^2         | Spearman multiple rho^2
-Nonlinear relationship with the likelihood | Feedback delay of prior patches | Feedback delay of prior patches | Feedback delay of prior patches
-"                                          | -                               | -                               | Churn
+Analysis                                   | Android                                                                                             | QT                                                                                             | OpenStack
+-------------------------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------------------
+Model Construction                         | [Variable Clustering](figures/varclus/varclus_FeedbackDelay_AndroidReviews.pdf)                     | [Variable Clustering](figures/varclus/varclus_FeedbackDelay_QtReviews.pdf)                     | [Variable Clustering](figures/varclus/varclus_FeedbackDelay_OpenStackReviews.pdf)  
+"                                          | [Spearman multiple rho^2](figures/spearman/estimateDF_FeedbackDelay_AndroidReviews.pdf)             | [Spearman multiple rho^2](figures/spearman/estimateDF_FeedbackDelay_QtReviews.pdf)             | [Spearman multiple rho^2](figures/spearman/estimateDF_FeedbackDelay_OpenStackReviews.pdf)
+Nonlinear relationship with the likelihood | [Feedback delay of prior patches](figures/rq3/results_FeedbackDelay_Android_PriorFeedbackDelay.pdf) | [Feedback delay of prior patches](figures/rq3/results_FeedbackDelay_Qt_PriorFeedbackDelay.pdf) | [Feedback delay of prior patches](figures/rq3/results_FeedbackDelay_OpenStack_PriorFeedbackDelay.pdf)
+"                                          | -                                                                                                   | -                                                                                              | [Churn](figures/rq3/results_FeedbackDelay_OpenStack_Churn.pdf)
 
-### Purpose Classification Validation Results
+### 3.4) Purpose Classification Validation Results
 
 We validate the purpose classification by taking a sample of 50 patches for each type of purpose. Then, we manually determine whether the patches are correctly classified or not.
 
@@ -74,17 +74,17 @@ We validate the purpose classification by taking a sample of 50 patches for each
 - Qt dataset (csv file, 9 KB)
 - OpenStack dataset (csv file, 9 KB)
 
-This validation can download [here]()
+This validation dataset can be downloaded [here](https://github.com/SAILResearch/replication-participation_code_review/releases/latest)
 
-## Example R Scripts
+## 4) Example R Scripts
 
-### Install Packages
+### 4.1) Install Packages
 
 ```R
 install.packages("rms")
 ```
 
-### Model Construction
+### 4.2) Model Construction
 
 This section shows how our model construction step is implemented. These R scripts are for our RQ1 with example outputs of Android dataset.
 
@@ -148,6 +148,7 @@ plot(vc)
 threshold <- 0.7
 abline(h=1-threshold, col = "red", lty = 2)
 ```
+![](figures/used-in-readme/corr-1.png)
 
 Remove the highly correlated variables from ```ind_vars``` vector and check for highly correlated variable again
 
@@ -166,6 +167,8 @@ plot(vc)
 threshold <- 0.7
 abline(h=1-threshold, col = "red", lty = 2)
 ```
+
+![](figures/used-in-readme/corr-2.png)
 
 ```R
 #Churn and NumberOfFiles are still highly correlated. Therefore, we remove the NumberOfFiles variable out.
@@ -265,6 +268,8 @@ sp <- spearman2(formula(paste("y" ," ~ ",paste0(ind_vars, collapse=" + "))), dat
 plot(sp)
 ```
 
+![](figures/used-in-readme/spearman.png)
+
 #### (MC-3) Logistic regression model construction step fits a model to the data and uses ```rcs``` function to allocate additional degrees of freedom to the survinving variables in the ```ind_vars``` vector according to their Spearman multiple rho^2 values
 
 ```R
@@ -273,7 +278,7 @@ DaysSinceTheLastModification + DescriptionLength + NumberOfPriorDefects + Direct
 PriorPatchesOfAnAuthor + Purpose + Churn + Entropy + OverallWorkload, data=data, x=T, y=T)
 ```
 
-### Model Analysis
+### 4.3) Model Analysis
 
 This section shows how our model analysis step is implemented.
 
@@ -307,6 +312,8 @@ print(explantory_power)
 predict <- Predict(fit,NumberOfReviewersOfPriorPatches,fun=function(x)exp(x))
 plot(predict, ylab='Odds')
 ```
+
+![](figures/used-in-readme/response-var.png)
 
 Estimate the partial effect
 
